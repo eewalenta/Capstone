@@ -1,6 +1,5 @@
 
 /*universal styles*/
-
 html {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
@@ -26,16 +25,8 @@ h3{
   font-weight: 300;
 }
 
-/*.content {
-  position: relative;
-}
-.center {
-  text-align: center;
-}*/
-
 
 /*header*/
-
 header {
   display: flex;
   justify-content: space-between;
@@ -92,49 +83,13 @@ header {
   display: none;
 }
 
-/*header moblie version*/
-
-@media only screen and (max-width: 690px) {
-  .title, .navigation {
-  display: none;
-}
-
-.phone-content {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  align-content: center;
-}
-
-.logo-one, .logo-two, .logo-three, .logo-four {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-}
-
 
 /*main-content*/
-
 .main-content {
   z-index: 500;
   position: relative;
   margin: 0 auto;
   top: 4rem;
-}
-
-
-/*top section*/
-
-.top {
-  display: flex;
-  padding: 0 1.5rem;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  position: relative;
-  z-index: 50;
 }
 
 .container60 {
@@ -148,14 +103,20 @@ header {
   height: auto;
 }
 
-/*.topbox2 {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}*/
-
 .container40{
   width: 40%;
+}
+
+
+/*top section*/
+.top {
+  display: flex;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  z-index: 50;
 }
 
 .button-text h1 {
@@ -189,43 +150,8 @@ header {
   transform: translate(0px, -5px);
 }
 
-/*top section moblie version*/
-
-@media only screen and (max-width: 690px) {
-
-  .top {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    height: auto;
-  }
-
-  .container60 {
-    width: 100%;
-    padding: 0;
-  }
-
-  .container40 {
-    margin-top: 2rem;
-    width: 100%;
-    padding-left: 1rem
-  }
-
-  .button-text h2 {
-   line-height: 3rem;
-  }
-
-  .button {
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-}
-
-}
-
 
 /*middle section*/
-
 .middle {
   display: flex;
   position: relative;
@@ -295,67 +221,8 @@ header {
    display: none;
 }
 
-/*middle section moblie version*/
-
-@media only screen and (max-width: 690px) {
-
-  .middle {
-    padding: 1rem 0;
-  }
-
-  .container60 {
-    display: none;
-  }
-
-  .container40 {
-    width: 100%;
-  }
-
-  .container40-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 4rem;
-   width: 100%;
-  }
-
-  .container40-image {
-    width: 100%;
-    overflow: hidden;
-    margin: auto;
-    box-sizing: border-box;
-  }
-
-  .container40-desktop {
-    display: none;
-  }
-
-  .container40-text {
-    width: 100%;
-  }
-
-  .container40-text h3 {
-    padding-left: 2rem;
-  }
-
-  .container40-text a{
-    padding-left: 2rem;
-  }
-
-  .container40-description {
-      padding-left: 2rem;
-  }
-
- .container40-mobile {
-   display: flex;
-   max-width: 100%;
-   height: auto;
- }
-
-}
-
 
 /*course section*/
-
 .courses {
   display: flex;
   flex-direction: column;
@@ -414,51 +281,8 @@ header {
   display: none;
 }
 
-/*course section moblie version*/
-
-@media only screen and (max-width: 690px) {
-
-  .courses {
-    width: 100%;
-    padding-bottom: 2rem;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .course-container {
-    display: none;
-  }
-
-  .mobile-navigation {
-    display: block;
-    width: 100%;
-  }
-
-  .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .list li {
-    padding: 1rem 1rem 1.5rem 1rem;
-    margin-bottom: 0.5rem;
-    background-color: #261448;
-    color: white;
-    width: 85%;
-  }
-
-  .list li:active{
-    background-color: gray;
-  }
-
-  .title-2 h2 {
-    margin-bottom: 1rem;
-  }
-}
 
 /*thesis section*/
-
 .thesis {
   display: flex;
   flex-direction: column;
@@ -472,7 +296,7 @@ header {
   z-index: 20;
 }
 
-.thesis-text {
+.thesis-title {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -510,89 +334,8 @@ header {
   line-height: 1.5rem;
 }
 
-.portfolio {
-  width: 40%;
-
-}
-
-.prototype, .research {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  transition:  all 750ms ease-in-out;
-
-}
-
-.research:hover {
-  background-color: #261448;
-  color: white;
-  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.6);
-}
-
-.prototype:hover {
-  background-color: #261448;
-  color: white;
-  box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.6);
-}
-
-.prototype-image, .research-image {
-  overflow: hidden;
-  width: 35%;
-
-}
-
-.prototype-image img, .research-image img {
-  max-width: 100%;
-  height: auto;
-  padding: 1rem;
-
-}
-
-.research-text, .prototype-text {
-  padding-left: 1rem;
-  width: 65%;
-}
-
-.research-text h3, .prototype-text h3 {
-  padding-bottom: 1rem;
-
-}
-
-/*thesis section moblie version*/
-
-@media only screen and (max-width:690px) {
-
-  .thesis {
-    padding: 0;
-  }
-
-  .portfolio {
-    display: none;
-  }
-
-  .video-text {
-    display: none;
-  }
-
-  .video-wrapper {
-    padding-bottom: 1.5rem;
-  }
-
-  .video-container {
-    width: 100%;
-    padding: 0;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .thesis-text {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-  }
-}
 
 /*footer*/
-
 footer {
   /*position: fixed;
   z-index: 1;
@@ -632,11 +375,160 @@ footer {
    margin-right: 1.5rem;
  }
 
-/*footer moblie version*/
 
-@media only screen and (max-width:690px) {
+/*MOBILE VERISONS*/
+
+@media only screen and (max-width: 690px) {
+
+  /*header moblie version*/
+  .title, .navigation {
+    display: none;
+  }
+  .phone-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-content: center;
+  }
+  .logo-one, .logo-two, .logo-three, .logo-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*top section moblie version*/
+  .top {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+  .top .container60 {
+    width: 100%;
+    padding: 0;
+  }
+  .top .container40 {
+    margin-top: 2rem;
+    width: 100%;
+    padding-left: 1rem
+  }
+  .button-text h2 {
+   line-height: 3rem;
+  }
+  .button {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  /*middle section moblie version*/
+  .middle {
+    padding: 1rem 0;
+  }
+  .middle .container60 {
+    display: none;
+  }
+  .middle .container40 {
+    width: 100%;
+  }
+  .middle .container40-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+  .middle .container40-image {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .middle .container40-desktop {
+    display: none;
+  }
+  .middle .container40-text {
+    width: 100%;
+  }
+  .middle .container40-text h3 {
+    padding-left: 2rem;
+  }
+  .middle .container40-text a{
+    padding-left: 2rem;
+  }
+  .middle .container40-description {
+    padding-left: 2rem;
+  }
+  .middle .container40-mobile {
+   display: flex;
+   max-width: 100%;
+   height: auto;
+  }
+
+
+  /*course section moblie version*/
+  .courses {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .course-container {
+    display: none;
+  }
+  .courses .mobile-navigation {
+    display: block;
+    width: 100%;
+  }
+  .courses .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .courses .list li {
+    padding: 1rem 1rem 1.5rem 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #261448;
+    color: white;
+    width: 85%;
+  }
+  .courses .list li:active{
+    background-color: gray;
+  }
+  .courses .title-2 h2 {
+    margin-bottom: 1rem;
+  }
+
+
+  /*thesis section moblie version*/
+  .thesis {
+    padding: 0;
+  }
+  .thesis .container40 {
+    display: none;
+  }
+  .video-text {
+    display: none;
+  }
+  .video-wrapper {
+    padding-bottom: 1.5rem;
+  }
+  .video-container {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .thesis-text {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+
+  /*footer moblie version*/
   footer {
-     padding: 0;
+     padding: 1rem;
+     border-top: 0;
   }
   .footer {
     width: 100%;
@@ -644,4 +536,5 @@ footer {
   .terms {
     display: none;
   }
+
 }
