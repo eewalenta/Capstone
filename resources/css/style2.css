@@ -1,0 +1,89 @@
+/*universal styles*/
+html{
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+h2{
+  font-size: 2.5rem;
+}
+h4{
+  font-size: 1.25rem;
+}
+.content {
+  position: relative;
+}
+.center {
+  text-align: center;
+}
+.main-content {
+  position: relative;
+  top: 4rem; /* To offset for fixed header.*/
+}
+
+/*header*/
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 64px;
+  padding-left: 24px;
+  background-color: lightblue;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.icon .icon2{
+  color: grey;
+  font-weight: lighter;
+}
+
+nav ul li a{
+  color: white;
+}
+/*top*/
+
+.top{
+  background-color: lightgrey;
+  padding: 32px 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.topimage{
+  border: 2px solid red;
+  width: 60%;
+  overflow: hidden;
+}
+.topimage img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.toptext{
+  border: 2px solid green;
+  margin-left: 24px;
+}
+.textbox{
+  width: 20rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.button{
+  background-color: #4a4a4a;
+  text-align: center;
+  padding: 8px;
+  color: #FFF;
+}
